@@ -6,6 +6,8 @@ Supported languages:
 - English
 - Hindi
 - Japanese Hiragana
+- Korean
+- Russian
 
 ---
 
@@ -15,15 +17,22 @@ Supported languages:
 - Multilingual support
 - CNN-based deep learning models
 - Image preprocessing and prediction
+- Confidence score for predictions
+- Separate trained models for each language
 - Pretrained models included
+- Interactive handwritten character testing
 
 ---
 
 ## 🧠 Model Details
 
 - Built using TensorFlow/Keras
-- Input size: 28×28 grayscale images
+- Grayscale image input
+- Input size: 64×64
 - CNN architecture for character classification
+- Batch Normalization and Max Pooling
+- Dropout for regularization
+- Data augmentation during training
 - Separate models for each language
 
 ---
@@ -36,6 +45,7 @@ Supported languages:
 - OpenCV
 - Pillow (PIL)
 - Streamlit
+- Google Colab
 
 ---
 
@@ -45,51 +55,5 @@ Supported languages:
 English/
 Hindi/
 Japanese/Hiragana/
-```
-
----
-
-## ▶️ Installation
-
-```bash
-pip install -r requirements.txt
-```
-
----
-
-## ▶️ Train Models
-
-### English
-
-```bash
-python English/train_english.py
-```
-
-### Hindi
-
-```bash
-python Hindi/train_hindi.py
-```
-
-### Hiragana
-
-```bash
-python Japanese/Hiragana/train_hiragana.py
-```
-
----
-
-## 💾 Included Models
-
-- english_model.h5
-- hindi_model.h5
-- hiragana_model.h5
-
----
-
-## 🌟 Future Improvements
-
-- Katakana recognition
-- Real-time webcam prediction
-- Interactive drawing canvas
-- Web deployment
+Korean/
+Russian/
