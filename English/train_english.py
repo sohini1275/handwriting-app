@@ -150,8 +150,8 @@ history = model.fit(
 # SAVE
 # -----------------------------------
 
-model.save("english_model.keras")
+model.save("english_model.h5")
 
 print("English model training complete!")
-print("Model saved as english_model.keras")
+print("Model saved as english_model.h5")
 print("Labels saved as english_labels.txt")
